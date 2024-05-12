@@ -1,5 +1,5 @@
 {
-  "name": "fi-wallet",
+  "name": "pi-pay",
   "private": true,
   "scripts": {
     "build": "turbo build",
