@@ -18,7 +18,7 @@ app.post("/hdfcWebhook", async (req, res) => {
 
   try {
     await db.$transaction([
-      db.balance.updateMany({
+      db.balance.update({
         where: {
           userId: Number(paymentInformation.userId),
         },
@@ -48,3 +48,5 @@ app.post("/hdfcWebhook", async (req, res) => {
     });
   }
 });
+
+app.listen(3003)
